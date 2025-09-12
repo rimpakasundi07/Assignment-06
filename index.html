@@ -103,5 +103,109 @@
         </div>
       </div>
     </section>
+    <!-- Choose Your Treessection start here -->
+    <section>
+      <div class="flex min-h-screen p-6">
+        <!-- Sidebar Categories -->
+        <div class="w-1/5">
+          <h2 class="font-bold mb-4">Categories</h2>
+          <ul class="space-y-2">
+            <li>
+              <button
+                class="w-full text-left px-3 py-1 rounded bg-green-600 text-white"
+                onclick="filterCategory('All Trees')"
+              >
+                All Trees
+              </button>
+            </li>
+            <li>
+              <button
+                class="w-full text-left px-3 py-1 hover:bg-green-200 rounded"
+                onclick="filterCategory('Fruit Tree')"
+              >
+                Fruit Trees
+              </button>
+            </li>
+            <li>
+              <button
+                class="w-full text-left px-3 py-1 hover:bg-green-200 rounded"
+              >
+                Flowering Trees
+              </button>
+            </li>
+            <li>
+              <button
+                class="w-full text-left px-3 py-1 hover:bg-green-200 rounded"
+              >
+                Shade Trees
+              </button>
+            </li>
+            <li>
+              <button
+                class="w-full text-left px-3 py-1 hover:bg-green-200 rounded"
+              >
+                Medicinal Trees
+              </button>
+            </li>
+            <li>
+              <button
+                class="w-full text-left px-3 py-1 hover:bg-green-200 rounded"
+              >
+                Timber Trees
+              </button>
+            </li>
+            <li>
+              <button
+                class="w-full text-left px-3 py-1 hover:bg-green-200 rounded"
+              >
+                Evergreen Trees
+              </button>
+            </li>
+            <li>
+              <button
+                class="w-full text-left px-3 py-1 hover:bg-green-200 rounded"
+              >
+                Ornamental Plants
+              </button>
+            </li>
+            <li>
+              <button
+                class="w-full text-left px-3 py-1 hover:bg-green-200 rounded"
+              >
+                Bamboo
+              </button>
+            </li>
+            <li>
+              <button
+                class="w-full text-left px-3 py-1 hover:bg-green-200 rounded"
+              >
+                Climbers
+              </button>
+            </li>
+            <li>
+              <button
+                class="w-full text-left px-3 py-1 hover:bg-green-200 rounded"
+              >
+                Aquatic Plants
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Product List section -->
+        <div class="w-3/5 px-6">
+          <h1 class="text-center text-xl font-bold mb-6">Choose Your Trees</h1>
+          <div id="product-list" class="grid grid-cols-3 gap-6"></div>
+        </div>
+
+        <!-- Cart  section-->
+        <div class="w-1/5 bg-white rounded-xl p-4 shadow">
+          <h2 class="font-bold mb-4">Your Cart</h2>
+          <ul id="cart-items" class="space-y-2"></ul>
+          <p class="mt-4 font-bold">Total: <span id="cart-total">Rs.</span></p>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
   </body>
 </html>
