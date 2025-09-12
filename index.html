@@ -11,6 +11,15 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Inter font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
     <!-- favicon  -->
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
   </head>
@@ -40,15 +49,11 @@
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              <li><a>Item 1</a></li>
+              <li><a>gallery</a></li>
               <li>
-                <a>Parent</a>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
+                <a>About</a>
               </li>
-              <li><a>Item 3</a></li>
+              <li><a>Plant a Tree</a></li>
             </ul>
           </div>
           <a class="text-xl pl-5 text-white">Green Earth</a>
@@ -69,6 +74,32 @@
           >
             Plant a tree
           </button>
+        </div>
+      </div>
+    </section>
+    <!-- Banner section start here -->
+    <section>
+      <div class="flex bg-green-100 items center">
+        <div class="mx-auto">
+          <img src="assets/hero-leaf1.png" alt="" />
+        </div>
+        <div class="mx-auto py-15 text-center space-y-4">
+          <h2 class="lg:text-4xl text-lg font-semibold">
+            Plant a Tree, Grow a Future
+          </h2>
+          <p>
+            Join our mission to plant 1 million trees and make the Earth<br />greener
+            for future generations.
+          </p>
+          <button
+            type="submit"
+            class="rounded-full cursor-pointer pr-5 py-1 px-2 bg-yellow-500 text-green-700"
+          >
+            Get Involved
+          </button>
+        </div>
+        <div class="mx-auto">
+          <img src="assets/hero-leaf2.png" alt="" />
         </div>
       </div>
     </section>
