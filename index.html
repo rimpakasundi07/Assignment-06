@@ -104,16 +104,15 @@
       </div>
     </section>
     <!-- Choose Your Treessection start here -->
-    <section>
+    <section class="bg-[#F0FDF4]">
       <div class="flex min-h-screen p-6">
-        <!-- Sidebar Categories -->
+        <!-- Sidebar Categories section -->
         <div class="w-1/5">
           <h2 class="font-bold mb-4">Categories</h2>
           <ul class="space-y-2">
             <li>
               <button
                 class="w-full text-left px-3 py-1 rounded bg-green-600 text-white"
-                onclick="filterCategory('All Trees')"
               >
                 All Trees
               </button>
@@ -121,7 +120,6 @@
             <li>
               <button
                 class="w-full text-left px-3 py-1 hover:bg-green-200 rounded"
-                onclick="filterCategory('Fruit Tree')"
               >
                 Fruit Trees
               </button>
@@ -195,7 +193,7 @@
         <!-- Product List section -->
         <div class="w-3/5 px-6">
           <h1 class="text-center text-xl font-bold mb-6">Choose Your Trees</h1>
-          <div id="product-list" class="grid grid-cols-3 gap-6"></div>
+          <div id="categories-container" class="grid grid-cols-3 gap-6"></div>
         </div>
 
         <!-- Cart  section-->
@@ -206,6 +204,37 @@
         </div>
       </div>
     </section>
+    <!-- About the Campaign  section start here-->
+    <section class="bg-[#F0FDF4]">
+      <h2 class="text-center lg:text-2xl text-lg font-semibold py-10">
+        About the Campaign
+      </h2>
+      <div class="flex items-center gap-8 w-8/12 pb-10 mx-auto">
+        <div>
+          <img src="assets/about.png" class="h-530px" alt="" srcset="" />
+        </div>
+        <div>
+          <p class="pb-4">
+            Green Earth is a global tree plantation initiative dedicated to
+            fighting climate change. Since our start, we’ve planted over 500,000
+            trees worldwide. By joining our campaign, you help restore forests,
+            create habitats for wildlife, and combat global warming.
+          </p>
+          <ul>
+            <ol>
+              . Restoration of natural habitats
+            </ol>
+            <ol>
+              . Improvement of air quality
+            </ol>
+            <ol>
+              . Support for local communities
+            </ol>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <script src="script.js"></script>
   </body>
 </html>
