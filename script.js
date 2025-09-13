@@ -13,6 +13,11 @@ const displayCategoriesCard = (card) => {
   const cardContainer = document.getElementById("card-container");
   cardContainer.innerHTML = "";
 
+  if (card.length == 0) {
+    alert("no word detected");
+    return;
+  }
+
   //   {
   // "id": 1,
   // "image": "https://i.ibb.co.com/cSQdg7tf/mango-min.jpg",
@@ -28,7 +33,7 @@ const displayCategoriesCard = (card) => {
     word.innerHTML = `
      <div class="rounded-lg bg-white shadow-lg p-2">
               <div>
-                <img class="rounded-lg" src="assets/bambo.png" alt="" />
+                <img class="rounded-lg" src="${card.image}" alt="" />
               </div>
               <div class="space-y-3 pt-5">
                 <h3 class="lg:text-xl text-lg font-semibold">${card.name}</h3>
