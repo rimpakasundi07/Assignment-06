@@ -33,11 +33,11 @@ const displayCategoriesCard = (card) => {
     word.innerHTML = `
      <div class="rounded-lg bg-white shadow-lg p-2">
               <div>
-                <img class="rounded-lg" src="${card.image}" alt="" />
+                <img class=" h-[450px] rounded-2xl w-[750px] object-cover" src="${card.image}" alt="" />
               </div>
               <div class="space-y-3 pt-5">
                 <h3 class="lg:text-xl text-lg font-semibold">${card.name}</h3>
-                <p>
+                <p class="text-base">
                  ${card.description}
                 </p>
                 <div class="flex justify-between items-center gap-5">
@@ -48,6 +48,7 @@ const displayCategoriesCard = (card) => {
                   </button>
                   <p>Rs.${card.price}</p>
                 </div>
+                <button class="font-semibold bg-green-700 text-white px-3 py-1 w-full rounded-full">Add to Cart </button>
               </div>
             </div>
 
