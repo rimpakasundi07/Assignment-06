@@ -248,23 +248,70 @@
         <h2 class="lg:text-2xl text-lg font-semibold text-center">
           Our Impact
         </h2>
-        <div class="flex items-center justify-between pt-10 text-center">
-          <div class="bg-white rounded-xl px-25 py-10">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 flex-wrap gap-5 pt-10"
+        >
+          <div
+            class="bg-white rounded-xl lg:px-25 lg:py-10 px-15 py-5 text-center"
+          >
             <h2 class="text-green-600 font-semibold lg:text-xl text-lg">
               500K+
             </h2>
             <p class="pt-5">Trees Planted</p>
           </div>
-          <div class="bg-white rounded-xl px-25 py-10 text-center">
+          <div
+            class="bg-white rounded-xl lg:px-25 lg:py-10 px-15 py-5 text-center"
+          >
             <h2 class="text-green-600 font-semibold lg:text-xl text-lg">
               120+
             </h2>
             <p class="pt-5">Communities Involved</p>
           </div>
-          <div class="bg-white rounded-xl px-25 py-10 text-center">
+          <div
+            class="bg-white rounded-xl lg:px-25 lg:py-10 px-15 py-5 text-center"
+          >
             <h2 class="text-green-600 font-semibold lg:text-xl text-lg">30+</h2>
             <p class="pt-5">Countries Reached</p>
           </div>
+        </div>
+      </div>
+    </section>
+    <!-- plant a tree today section start here -->
+    <section class="bg-green-800 flex flex-col py-20">
+      <div class="flex-grow flex items-center justify-center">
+        <div class="bg-green-700 p-8 rounded-lg shadow-lg w-[650px]">
+          <h2 class="text-center text-white text-2xl font-bold mb-6">
+            Plant a Tree Today
+          </h2>
+          <form class="space-y-3">
+            <input
+              type="text"
+              class="w-full p-4 py-2 rounded-lg bg-white"
+              placeholder="Your Name"
+            />
+            <input
+              type="email"
+              class="w-full p-4 py-2 rounded-lg bg-white"
+              placeholder="Your Email Address"
+            />
+            <select type="search" class="w-full p-4 py-2 rounded-lg bg-white">
+              <option>Number of Trees</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>10</option>
+              <option>15</option>
+              <option>20</option>
+            </select>
+            <button
+              type="submit"
+              class="rounded-full cursor-pointer pr-5 py-1 w-full px-2 bg-yellow-500 text-green-700"
+            >
+              Donate Now
+            </button>
+          </form>
         </div>
       </div>
     </section>
