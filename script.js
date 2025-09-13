@@ -3,20 +3,28 @@ const loadCategories = () => {
     .then((res) => res.json()) //promise of json data
     .then((json) => displayCategories(json.categories));
 };
+
+const removeActive = () => {
+  const cardButtons = document.querySelectorAll(".card-btn");
+  // console.log(cardButtons);
+  cardButtons.forEach((btn) => btn.classList.remove("active"));
+};
+
 const loadCategoriesCard = (id) => {
   const url = `https://openapi.programming-hero.com/api/category/${id}`;
   fetch(url)
     .then((res) => res.json())
-    .then((data) => displayCategoriesCard(data.plants));
+    .then((data) => {
+      removeActive(); // remove all active class
+      const clickBtn = document.getElementById(`card-btn-${id}`);
+
+      clickBtn.classList.add("active"); // add active class
+      displayCategoriesCard(data.plants);
+    });
 };
 const displayCategoriesCard = (card) => {
   const cardContainer = document.getElementById("card-container");
   cardContainer.innerHTML = "";
-
-  if (card.length == 0) {
-    alert("no word detected");
-    return;
-  }
 
   //   {
   // "id": 1,
@@ -69,9 +77,10 @@ const displayCategories = (categories) => {
     console.log(categorie);
     const btnDiv = document.createElement("div");
     btnDiv.innerHTML = `
-    <button onclick="loadCategoriesCard('${categorie.id}')" class="
-    w-full text-left px-3 py-1 hover:bg-green-200 rounded
-    ">
+    <button id="card-btn-${categorie.id}" 
+    onclick="loadCategoriesCard('${categorie.id}')"
+     class="w-full text-left px-3 py-1 card-btn hover:bg-[#dcfce7]
+      rounded">
    
     ${categorie.category_name}
     </button>`;
